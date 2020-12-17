@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+.app{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #dadbd3;
+    background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+}
+.app-body{
+    display: flex;
+    /* margin-top: -50px; */
+    height: 90vh;
+    width: 90vw;
+    background-color: #ededed;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0,0, 0.75);
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex: 0.35;
+    border-right: 1px solid lightgray;
+}
+.chat{
+    display: flex;
+    flex-direction: column;
+    flex: 0.65;
+    
+}
+.sidebar-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+.sidebar-header-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 10vw;
+}
+.search{
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    height: 40px;
+    padding: 10px;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+}
+.search-container .MuiSvgIcon-root{
+    color: gray;
+    padding: 10px;
+}
+.search-box{
+    border: none;
+    outline-width: 0;
+    width: 75%;
+}
+.list-item{
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #f6f6f6;
+    position: relative;
+}
+.list-item:hover{
+    background-color: #ebebeb;
+}
+.list{
+    background-color:white;
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 20px;
+    margin: 10px;
+}
+.chat-info h2{
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+.chat-info{
+    margin-left: 15px;
+}
+.chat-info p{
+    color: gray;
+}
+.chat-header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+.chat-header-info{
+    flex: 1;
+    padding-left: 20px;
+}
+.chat-header-info h3{
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+.chat-header-info p{
+    color: gray;
+}
+.chat-body{
+    background-color: #ebebeb;
+    flex: 1;
+    background-image: url("https://www.transparenttextures.com/patterns/food.png");
+    background-position: center;
+    padding: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.message{
+    position: relative;
+    font-size: 1rem;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+.time{
+    margin-left: 10px;
+    font-size: xx-small;
+}
+.sender{
+    position: absolute;
+    top: -20px;
+    font-weight: 800;
+    font-size: 1rem;
+}
+.message-sent{
+    margin-left: auto;
+    background-color: orange;
+}
+form .MuiFab-root{
+    background-color: orange;
+    color: white;
+    height: 45px;
+    width: 45px;
+}
+form .MuiFab-root:hover{
+    color: orange;
+    background-color: #fff;
+}
+.chat-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    border-top: 1px solid lightgray;
+}
+.chat-footer form input{
+    flex: 1;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    outline-width: 0;
+    margin-right: 20px;
+    
+}
+.chat-footer form input:focus{
+    box-shadow: 0 0 3px 2px orange;
+}
+.chat-footer form{
+    width: 90%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+.message .MuiFab-root{
+    position:absolute;
+    background-color: white;
+    color: orange;
+    bottom:-25px;
+    right: -15px;
+    height: 25px;
+    width: 30px;
+}
+.message .MuiFab-root .MuiSvgIcon-root{
+    font-size: 20px;
+}
+.message .MuiFab-root:hover{
+    background-color: orange;
+    color: white;
+}
+.cr-room{
+    position: relative;
+    top: 8px;
+    font-size: 20px;
+}
+.login{
+    background-color: #f8f8f8;
+    background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.login-container{
+    padding: 100px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+.login-container img{
+    object-fit: contain;
+    height: 100px;
+    margin-bottom: 40px;
+}
+.login-container button {
+    margin-top: 50px;
+    text-transform: inherit !important;
+    background-color: #0a8d48 !important;
+    color: white;  
+    margin: 10px;
+    display: inline-block;
+}
+.fb-button{
+    background-color: blue;
+}
+.dname{
+    position: relative;
+    top: 8px;
+}
+a{
+    text-decoration: none !important;
+    color: inherit;
+}
+.list-item .MuiFab-root{
+    position: absolute;
+    right: 12px;
+    bottom: 25px;
+    background-color: orange;
+    color: white;
+    height: 40px;
+    width: 40px;
+}
+.list-item .MuiFab-root:hover{
+    color: orange;
+    background-color: #fff;
+    
+}
+.picker{
+    position: absolute;
+    top:300px;
+}
+.message::selection{
+    background-color: #fff;
+}
+.message-sent::selection{
+    background-color: orange;
+}
+.message-sent .sound{
+    right: 20px;
+    font-size: 4px;
+}
